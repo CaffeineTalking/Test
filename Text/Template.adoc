@@ -1,0 +1,38 @@
+= Document Title
+
+== Procedure module heading (Section Heading Level 1)
+
+Introductory paragraph.
+Can include *bold*, _italic_, and `code`
+
+=== Prerequisites (Section Heading Level 2)
+
+Itemized list
+
+* First item
+* Second item
+* Third item
+
+=== Procedure (Section Heading Level 2)
+
+Order list
+
+. First step. Single paragraph and nothing else.
+. Second step. Two paragraphs.
++
+Must be connected with the plus sign to let AsciiDoc know they're part of the same step.
+. Third step. Has two paragraphs with a code block between them.
++
+----
+`code block`
+----
++
+Second paragraph of step three.
+
+=== Additional resources (Section Heading Level 2)
+
+* http//:example.com
+* http//:example.com[example link]
+* link:http//:example.com[example link]
+
+==== Subsection heading (level 3)

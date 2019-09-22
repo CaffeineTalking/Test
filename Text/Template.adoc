@@ -20,7 +20,8 @@ Order list
 . First step. Single paragraph and nothing else.
 . Second step. Two paragraphs.
 +
-Must be connected with the plus sign to let AsciiDoc know they're part of the same step.
+Must be connected with the plus sign.
+It lets AsciiDoc know they're part of the same step.
 . Third step. Has two paragraphs with a code block between them.
 +
 ----
@@ -32,7 +33,14 @@ Second paragraph of step three.
 === Additional resources (Section Heading Level 2)
 
 * http//:example.com
++
+(fail)
++
+works this way link:http//:example.com[]
 * http//:example.com[example link]
++
+(fail)
++
 * link:http//:example.com[example link]
 
 ==== Subsection heading (level 3)

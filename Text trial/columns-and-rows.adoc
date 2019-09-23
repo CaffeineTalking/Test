@@ -1,0 +1,8 @@
+Columns and Rows
+
+[options="header"]
+|====
+|Column 1 header|Column 2 header|Column 3 header|Column 4 header
+|Row 1, column 1|Row 1 column 2|Row 1 column 3|Row 1 column 4
+|Row 2, column 1|Row 2 column 2|Row 2 column 3|Row 2 column 4
+|====

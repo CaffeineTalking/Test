@@ -1,0 +1,12 @@
+= *Block IDs* ???
+
+* Must be unique to each section
+* Must *not* contain spaces
+
+[id='this-is-a-block-id']
+= This is a section heading
+
+----
+[id='this-is-a-block-id']
+= This is a section heading
+----

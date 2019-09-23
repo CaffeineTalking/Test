@@ -1,0 +1,236 @@
+= *Grammer*
+
+== Active vs Passive voice
+
+Active voice::
+
+The subject performs the action stated by the verb.
++
+----
+subject + verb + object
+----
++
+.Example:
+----
+Type ... to start Linuxconf
+----
+
+Passive voice::
++
+The subject is acted upon by the verb
++
+.Example:
+----
+Linuxconf can be started by typing...
+----
+
+=== General rules
+
+Use _active voice_ whenever possible. It's more lively, appealing, easier to read.
+
+Usage of _passive voice_ is appropriate in release notes, technical notes, etc.
+
+Also used to front-load important _keywords_ in key areas of content (title, heading, beginning of a paragraph/sentence).
+
+.Active voice example:
+----
+Dutch hosting provider Oxilion launches _public cloud_ service based on Red Hat Enterprise Virtualization.
+----
+
+.Passive voice example:
+----
+_Public cloud_ service based on Red Hat Enterprise Virtualization launched by Dutch hosting provider Oxilion.
+----
+
+== Using Who, Whom, That, and Which
+
+. *Who*
++
+Relative pronoun when a person (or persons) is the subject.
++
+.Example:
+----
+Edward C. Bailey, who wrote "Maximum RPM,"...
+
+The GNOME developers who worked on the desktop are...
+----
+. *Whom*
++
+Relative pronoun when person is not the subject.
++
+.Example:⁠
+----
+This book belongs to whomever purchased it last week.
+
+The GNOME developers to whom I owe my gratitude are...
+----
+. *Which*
++
+Relative pronoun for things.
++
+.Example:⁠
+----
+The jewel case, which once held the CD, was broken recently.
+----
+. *That*
++
+Restrictive pronoun for things.
++
+.Example:
+----
+The company that published "Maximum RPM" was...
+
+The desktop that was designed by Earl is not called GNOME.
+----
+
+== Sentence Structure
+
+=== General
+
+. Must be one, complete thought.
+
+. Must expresses something about a subject (a person, place, thing) and a verb (what the subject is or does).
+
+. Must be short.
+
+* Separate independent clauses with a period. Doing so will form two sentences out of one.
+
+* Use semicolons to form a compound sentence. Think of a semi-colon as an extended breather; longer than a comma.
+
+* Insert a coordinating conjunction, such as "and" or "but", between the independent clauses to form a compound sentence.
++
+.Example:
+----
+The process will start, but it will produce an error.
+----
+* Insert a subordinating conjunction, such as "although" or "because", which will form a compound sentence with a subordinate clause.
++
+.Example:
+----
+Although the process will start, it will produce an error.
+----
+
+[options="header"]
+|====
+|Example|Improvement
+|The CDs both of which belonged to the developers were in the test lab.|The CDs, both of which belonged to the developers, were in the test lab.
+|To access your programs click the *Start* button.|	To access your programs, click *Start*.
+|The CDs, both of which belonged to the developers, were in the test lab, because they were the only available CDs for the new release, the developers were anxious about keeping them clean.|The CDs, both of which belonged to the developers, were in the test lab. Because they were the only available CDs for the new release, the developers were anxious about keeping them clean.
+|====
+
+=== Fragment sentences
++
+.Example:
+----
+We will release no upgrade. At least, before its time.
+----
+
+Read your sentences aloud, as if each sentence were the *only* sentence on a piece of paper. If you hear a sentence that does not make any sense by itself, then it is probably a sentence fragment.
+
+.Improvement:
+----
+We will release no upgrade before its time.
+----
+
+=== Telegraphic Style
+Extreme case of word economy: skipping words that can clarify the meaning of a sentence (articles, prepositions, verbs used with gerunds).
+
+.Example:
+----
+Click button to start.
+----
+
+.Improvement:
+----
+Click *Initiate* to start the process.
+----
+
+Telegraphic Style is a common mistake in the *Revision History*.
+
+* The wording in the Revision History must be clear for translators and customers to understand.
++
+[options="header"]
+|====
+|Example|Improvement
+|Minor revision - missing element items.|Minor revision - #added# missing element items.
+|Some further work required to avoid 404s at lower levels of the SDK.|Some further work required to avoid 404 #errors# at lower levels of the SDK.
+|====
+
+=== Verbosity
+
+Avoid unnecessary words.
+
+.Example:
+----
+The individual member of the social community often receives his information via visual, symbolic channels.
+----
+.Improvement:
+----
+People read. (Translation by Richard Feynman.)
+----
+
+=== Avoiding Ambiguities
+
+. Capitalizing Proper Nouns and Product Names
++
+.Example:
+----
+This property must be enabled when you are using CTDB in a Windows domain or in active directory security mode.
+----
++
+.Improvement:
+----
+This property must be enabled when you are using CTDB in a Windows domain or in Active Directory security mode.
+----
+
+. Homographic Verbs
++
+Avoid words like *may* or *should* to avoid double meaning.
+
+* Verb _may_ can be used to express possibility as well as to grant permissions.
+* Word _should_ can be used to make recommendations as well as to express obligation or expectation.
++
+[options="header"]
+|====
+|Example|Improvement
+|The *next()* method #should# return *null* to indicate the end of results.|The *next()* method #is expected# to return *null* to indicate the end of results. _OR_ The *next()* method #must# return *null* to indicate the end of results.
+|It may be held in memory.|It #can# be held in memory. _OR_ It #might# be held in memory.
+|====
+
+. Homonymity
++
+When a single term has multiple meanings, be explicit in order to differentiate between them.
++
+.Example:
+----
+To create another administrator, click *New* on the *File* menu.
+----
++
+.Improvement:
+----
+To create another administrator #account#, click *New* on the *File* menu.
+
+OR
+
+To set privileges for another administrator, click *New* on the *File* menu.
+----
+
+. ⁠ Invisible Plurals
++
+Some two-word phrases (noun + noun) do not clarify whether the first noun is singular or plural.
++
+.Example:
+----
+Once the file retrieval has been completed, you are ready to restart your system.
+----
++
+.Improvement:
+----
+After the files have been retrieved, you can restart your system.
+----
+
+. Synonymity
++
+Sometimes multiple terms have a single meaning. If terms are used inconsistently, users (and translators) will assume they refer to different things. It is best to use a single term for a single concept throughout.
++
+*Administration GUI* and *Administration Console* could both be used to refer to a single application or to different applications. For this reason it is important that writers choose the most suitable term for each situation and use it consistently.

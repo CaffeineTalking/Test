@@ -1,0 +1,144 @@
+
+= *Headings*
+
+* 5 heading levels from level 0 (=) to level 4 (=====)
+
+= Level 0
+
+----
+= Level 0
+----
+
+== Level 1
+
+----
+== Level 1
+----
+
+=== Level 2
+----
+=== Level 2
+----
+
+==== Level 3
+
+----
+==== Level 3
+----
+
+===== Level 4
+
+----
+===== Level 4
+----
+
+= *Block IDs* ???
+
+* Must be unique to each section
+* Must *not* contain spaces
+
+[id='this-is-a-block-id']
+= This is a section heading
+
+----
+[id='this-is-a-block-id']
+= This is a section heading
+----
+
+= *Inline markups*
+---
+*Bold*
+
+* *Constrained*
++
+----
+*Constrained*
+----
++
+* **Un**constrained
++
+----
+**Un**constrained
+----
+
+---
+_Italic_
+
+* _Constrained_
++
+----
+_Constrained_
+----
+
+* __Un__constrained
+
+----
+__Un__constrained (2x_)
+----
+
+---
+`Monospace`
+
+Marks up literal values
+
+. file names
+. shell commands
+. names of services
+. variable names and variable values
+
+* `Constrained`
++
+----
+* `Constrained`
+----
+
+* ``Un``constrained
++
+----
+``Un``constrained
+----
+
+* monospace bold `*constrained*` & ``**un**``constrained
++
+----
+monospace bold `*constrained*` & ``**un**``constrained
+----
+
+* monospace italic `_constrained_` & ``__un__``constrained
++
+----
+monospace italic `_constrained_` & ``__un__``constrained
+----
+
+* monospace bold italic `*_constrained_*` & ``**__un__**``constrained
++
+----
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+----
+
+---
+Uses of # for custom text
+
+* #yellow highlight#
++
+----
+#yellow highlight#
+----
+
+* [.small]#small print#
++
+----
+[.small]#small print#
+----
+
+* [.big]##big print##
++
+----
+[.big]##big print##
+----
+
+* [.underline]#underline#
++
+----
+[.underline]#underline#
+----
